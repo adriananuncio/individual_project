@@ -48,7 +48,7 @@ def rmse_using_mu(y_train):
 # In[ ]:
 
 
-def create_models_df(rmse_train_mu, y_train)    
+def create_models_df(rmse_train_mu, y_train):
     metric_df = pd.DataFrame(data=[
         {'model': 'mean_baseline',
          'RMSE_train': rmse_train_mu,
@@ -62,7 +62,7 @@ def create_models_df(rmse_train_mu, y_train)
 # In[ ]:
 
 
-def rmse_using_ols
+def rmse_using_ols():
     # drop username and name to be able to use ols model
     X_train = X_train.drop(columns=['username'])
     # make the thing
@@ -81,7 +81,7 @@ def rmse_using_ols
 # In[ ]:
 
 
-def add_to_models_df(rmse_train, y_train)
+def add_to_models_df(rmse_train, y_train):
     metric_df = metric_df.append(
         {'model': 'OLS Regressor',
          'RMSE_train': rmse_train,
