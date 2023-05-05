@@ -212,3 +212,12 @@ __Statistic Testing__
         
     - shares X engagement
         There is NOT a statistically significant relationship.
+      
+# Conclusion
+My models have failed to outperform the baseline. R2 values are nearly 0, indicating regression is unable to explain engagement variance. Knowing this, I will move forward with feature engineering and classification modeling.
+
+### Recreate
+To recreate this repository:
+
+    - Download the data set from Kaggle https://www.kaggle.com/datasets/syedjaferk/top-1000-tiktokers
+    - Run 'final_notebook'
