@@ -82,9 +82,9 @@ def train_validate_test(df, target):
     a validate, which is 24% of the entire dataframe,
     and a train, which is 56% of the entire dataframe. 
     It then splits each of the 3 samples into a dataframe with independent variables
-    and a series with the dependent, or target variable. 
-    The function returns 3 dataframes and 3 series:
-    X_train (df) & y_train (series), X_validate & y_validate, X_test & y_test. 
+    and a dataframe with the dependent, or target variable. 
+    The function returns 6 dataframes:
+    X_train & y_train, X_validate & y_validate, X_test & y_test. 
     '''
     # split df into test (20%) and train_validate (80%)
     train_validate, test = train_test_split(df, test_size=.2, random_state=123)
