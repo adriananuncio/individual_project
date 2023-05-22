@@ -58,7 +58,7 @@ def var_distributions_2(X_train, y_train):
     plt.tight_layout()
     plt.show()
 
-def m(X_train):  
+def x_var_by_shares(X_train):  
     # view X_train variables against y_train
     plt.figure(figsize=[10,15])
     plt.subplot(421)

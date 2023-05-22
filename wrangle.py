@@ -37,6 +37,7 @@ def import_df(csv_file):
 # --------------------------------------------------------------------------------
 # Prepare
 def prep_data(df):
+    '''This function will drop columns: Tiktok Link and name using their index. Next the function will format column titles to be all lowercase, snakecase, and remove periods. Next columns will be renamed for simplicity, and numeric column dtypes are changed to be numeric and formated for use in regression modeling. Lastly, duplicate rows are dropped and column: engagement is created.'''
     # drop Tiktok Link and name using their index - 2, 3
     df = df.drop(df.columns[[2,3]], axis=1)
     # format column names to be all lowercase
